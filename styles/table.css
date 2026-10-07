@@ -1,0 +1,18 @@
+table {
+  min-width: var(--min-width-table);
+  border-collapse: collapse;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--color-table-stripe);
+}
+
+th,
+td {
+  padding: var(--spacing);
+  text-align: left;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}

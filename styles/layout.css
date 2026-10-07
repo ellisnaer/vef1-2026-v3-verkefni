@@ -1,0 +1,35 @@
+/**
+ * TODO custom variables
+ * TODO skipta yfir í grid
+ */
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto auto 1fr auto;
+  gap: var(--spacing-triple);
+  min-height: 100vh;
+  margin-top: var(--spacing);
+}
+
+main {
+  grid-area: main;
+  width: var(--width-offset);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+footer {
+  grid-area: footer;
+}

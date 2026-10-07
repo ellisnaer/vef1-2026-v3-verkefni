@@ -1,0 +1,48 @@
+/**
+ * TODO custom variables
+ * TODO skalanlegt
+ */
+
+form {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  gap: var(--gutter);
+}
+
+fieldset {
+  grid-column: span 12;
+  border: 0;
+
+  @media (width >= 700px) {
+    grid-column: span 6;
+  }
+}
+
+fieldset legend {
+  margin-bottom: var(--spacing);
+  font-size: var(--font-size-legend);
+}
+
+fieldset div {
+  width: 100%;
+  margin-bottom: var(--spacing-double);
+}
+
+fieldset div label {
+  display: block;
+}
+
+fieldset input,
+fieldset select,
+fieldset textarea {
+  width: 100%;
+  padding: var(--spacing);
+  background-color: var(--color-input-background);
+  border: var(--border-width-small) solid var(--color-border);
+}
+
+fieldset input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-right: var(--spacing);
+}
